@@ -10,7 +10,17 @@ div {
 }
 
 .topo {
-    background-color: #fc3d03;
+    background-color: rgb(217, 85, 80);
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    padding-bottom: 12px;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top);
 }
 
 .cabecalho {
@@ -22,6 +32,31 @@ div {
     padding: 0px 12px;
     max-width: 620px;
     margin: auto;
+}
+
+.cabecalhoBotao {
+    background-color: inherit;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.tituloLogo {
+    display: inline-block;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.blocoSpan {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
 }
 
 .icon {
@@ -37,8 +72,10 @@ h1 {
 .botao {
     display: flex;
     -webkit-box-align: center;
-    justify-content: center;
     align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
     border-radius: 4px;
     cursor: pointer;
     opacity: 0.9;
@@ -46,8 +83,23 @@ h1 {
     box-shadow: none;
     margin-left: 10px;
     font-size: 13px;
+    padding: 8px 12px;
+    min-width: 70px;
     border: none;
     color: white !important;
+}
+
+.imagem {
+    width: 16px;
+}
+
+.descricao {
+    display: block;
+    margin-left: 4px;
+}
+
+.login {
+    position: relative;
 }
 
 button {
@@ -58,6 +110,199 @@ button {
     word-spacing: normal;
     line-height: normal;
     text-indent: 0px;
-
 }
 
+.bloco {
+    text-align: center;
+}
+
+.divisao {
+    background-color: rgb(0,0,0,0.1);
+    height: 1px;
+    margin-bottom: 40px;
+}
+
+.linhadivisao {
+    height: 3px;
+    background-color: white;
+    border-radius: 100px;
+    transform: translateY(-1px);
+    width: 0%;
+}
+
+.blocoCentral {
+    max-width: 480px;
+    margin: auto;
+}
+
+.central1 {
+    background-color: rgba(255,255,255,0.1);
+    padding: 20px 0px 30px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.botoesBloco {
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.botaoPomo {
+    border: none;
+    margin: 0px;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 2px 12px;
+    height: 28px;
+    cursor: pointer;
+    background-color: none rgb(0,0,0,0.15);
+    box-shadow: none;
+    color: white;
+    font-weight: bold;
+}
+
+.botaoDscurto {
+    border: none;
+    color: white;
+    margin: 0px;
+    border-radius: 4px;
+    font-family: Helvetica;
+    font-size: 16px;
+    padding: 2px 12px;
+    height: 28px;
+    cursor: pointer;
+    background: none;
+    box-shadow: none;
+    font-weight: 300;
+}
+
+.tempo {
+    font-size: 120px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.Start {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.botaoIniciar {
+    cursor: pointer;
+    border: none;
+    margin: 20px 0px 0px;
+    padding: 0px 12px;
+    border-radius: 4px;
+    box-shadow: rgb(235,235,235) 0px 6px 0px;
+    font-family: Helvetica;
+    font-size: 22px;
+    height: 55px;
+    color: rgb(217,85,80);
+    font-weight: bold;
+    width: 200px;
+    background-color: white;
+    transition: color 0.5s ease-in-out 0s;
+}
+
+.avancar {
+    width: calc((100% - 200px) / 2 + 5%);
+    position: absolute;
+    right: 0px;
+    bottom: -6px;
+    height: 54px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.botaoAvancar {
+    cursor: pointer;
+    user-select: none;
+    background: none;
+    border: none;
+    width: 28px;
+    height: 28px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    bottom: 9px;
+    right: -50px;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.2s ease-out 0s;
+}
+
+.avancarImg {
+    width: 22px;
+    opacity: 0.9;
+}
+
+.steps {
+    font-size: 16px;
+    opacity: 0.6;
+    margin-bottom: 4px;
+}
+
+.mensagem {
+    font-size: 18px;
+    font-weight: 100;
+    color: white;
+    overflow-wrap: break-word;
+}
+
+.corpoTarefas {
+    max-width: 480px;
+    margin: 20px auto 42px;
+}
+
+.tarefas {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    border-bottom: 2px solid rgba(255,255,255,0.6);
+    padding-bottom: 14px;
+}
+
+.descricaoTarefas {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.opcao {
+    position: relative;
+}
+
+.botaoOpcao {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.9;
+    background: none rgba(255, 255, 255, 0.2);
+    box-shadow: none;
+    margin-left: 10px;
+    font-size: 13px;
+    padding: 8px;
+    min-width: auto;
+    border: none;
+    color: white !important;
+}
+
+.imgOpcao {
+    width: 18px;
+}
