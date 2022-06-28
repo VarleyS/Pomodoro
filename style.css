@@ -53,6 +53,10 @@ div {
     font-size: 20px;
 }
 
+.tituloLogo a {
+    color: white;
+}
+
 .blocoSpan {
     display: flex;
     -webkit-box-align: center;
@@ -63,6 +67,13 @@ div {
     width: 20px;
 
 }
+
+h1, h2, h3, h4 {
+    color: hsl(357, 50%, 22%);
+    margin-top: 1.8rem;
+    margin-bottom: 0em;
+}
+
 h1 {
     display: block;
     font-size: 2em;
@@ -73,10 +84,12 @@ h1 {
     font-weight: bold;
 }
 
-h1, h2, h3, h4 {
-    color: hsl(357, 50%, 22%);
-    margin-top: 1.8rem;
-    margin-bottom: 0em;
+h1, h2 {
+    margin-top: 34px;
+    display:inline-block;
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+    line-height: 1.4em;
 }
 
 .botao {
@@ -148,7 +161,7 @@ button {
 .central1 {
     background-color: rgba(255,255,255,0.1);
     padding: 20px 0px 30px;
-    border-radius: 6px;
+    border-radius: 100px;
     margin-bottom: 20px;
     width: 100%;
 }
@@ -386,6 +399,12 @@ button {
     font-weight: bold;
 }
 
+.container {
+    max-width: 620px;
+    margin: auto;
+    padding: 0 12px;    
+}
+
 .imageCont {
     margin-top: 30px;
 }
@@ -394,4 +413,111 @@ button {
     display: block;
     margin-top: 50px;
     margin-bottom: 20px;
+}
+
+h2 {
+    display: block;
+    width: 24px;
+    padding-top: 8px;
+    border-bottom: 4px solid #f05b56;
+    opacity: 0.6;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6em;
+    color: hsl(357, 12%, 42%);
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+ol {
+    font-size: 16px;
+    -webkit-padding-start: 24px;
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    font-size: 18px;
+    list-style: none;
+    -webkit-padding-start: 24px;
+}
+
+li {
+    line-height: 1.6rem;
+    color: hsl(357,12%,42%);
+    margin: 12px 0px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    font-size: 16px;
+}
+
+li::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+
+.listaCaract li::before {
+    color: hsl(357, 74%, 67%);
+    content: '\2022';
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.rodape {
+    margin-top: 40px;
+    border-top: 2px solid #efefef;
+    text-align: center;
+    padding-top: 30px;
+    color: hsl(357,12%,42%);
+    padding-bottom: 20px;
+}
+
+.rodape_menuSite {
+    margin-bottom: 14px;
+}
+
+a {
+    text-decoration: none !important;
+    color: hls(357, 74%, 67%);
+    color: rgb(217 85 80);
+    font-weight: bold;
+}
+
+.rodape_redesSociais {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.rodape_redesSociais img {
+    background-color: #999;
+    width: 28px;
+    height: 28px;
+    border-radius: 100px;
+    padding: 6px;
+    margin: 0px 6px;
+    margin-bottom: 14px;
 }
